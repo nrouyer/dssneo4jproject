@@ -1,7 +1,12 @@
 {
   "name": "Nodes",
   "color": "#D03713",
-  "items": [],
+  "items": [
+    {
+      "objectId": "LWINdatabase",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
