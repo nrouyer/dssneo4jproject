@@ -5,6 +5,10 @@
     {
       "objectId": "TviWmFBo",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_TviWmFBo",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [
