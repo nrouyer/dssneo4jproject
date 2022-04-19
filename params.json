@@ -183,11 +183,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650369011059
+    "lastModifiedOn": 1650369142640
   },
   "creationTag": {
     "versionNumber": 0,
@@ -228,7 +228,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "export project as zip file",
             "createdOn": 1650368617794,
             "createdBy": "admin",
