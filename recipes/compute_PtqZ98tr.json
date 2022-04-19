@@ -22,7 +22,7 @@
         "mode": "PRESET",
         "name": "neo4j conf"
       },
-      "source_node_label": "Country",
+      "source_node_label": "Wine",
       "relationships_verb": "IN",
       "target_node_label": "Region",
       "source_node_id_column": "LWIN",
@@ -61,11 +61,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650382752142
+    "lastModifiedOn": 1650382841605
   },
   "creationTag": {
     "versionNumber": 0,
