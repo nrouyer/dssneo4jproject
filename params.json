@@ -183,11 +183,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650368657176
+    "lastModifiedOn": 1650369011059
   },
   "creationTag": {
     "versionNumber": 0,
@@ -196,52 +196,18 @@
     },
     "lastModifiedOn": 1649851074401
   },
-  "shortDesc": "The project *trydss* was created by Nicolas ROUYER on Apr 13th 2022",
+  "shortDesc": "The project *a graph of wines* was created by Nicolas ROUYER on Apr 13th 2022",
   "tags": [],
   "customFields": {},
   "checklists": {
     "checklists": [
       {
-        "title": "Your new project\u0027s Todo",
-        "createdOn": 0,
-        "items": [
-          {
-            "done": true,
-            "text": "Create the project",
-            "createdOn": 1649851074403,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": true,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1649851074403,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": true,
-            "text": "Import your [first dataset](projects/TRYDSS/datasets/new/)",
-            "createdOn": 1649851074403,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": true,
-            "text": "Organize your work by replacing this with a real todo",
-            "createdOn": 1649851074403,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          }
-        ]
-      },
-      {
         "id": "5cea7a",
-        "title": "Todo list 2",
+        "title": "Todo list",
         "createdOn": 0,
         "items": [
           {
-            "done": false,
+            "done": true,
             "text": "import Wine nodes",
             "createdOn": 1650368513572,
             "createdBy": "admin",
