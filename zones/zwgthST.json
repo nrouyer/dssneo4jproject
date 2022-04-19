@@ -57,6 +57,10 @@
     {
       "objectId": "compute_LWINdatabase_prepared_SubRegions_Regions",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "cBr4uVID",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [
