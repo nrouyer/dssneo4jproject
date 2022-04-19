@@ -33,6 +33,14 @@
     {
       "objectId": "compute_UCjefWH8",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "LWINdatabase_prepared_Site_SubRegions",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_LWINdatabase_prepared_Site_SubRegions",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [
