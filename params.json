@@ -183,11 +183,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650368513687
+    "lastModifiedOn": 1650368657176
   },
   "creationTag": {
     "versionNumber": 0,
@@ -244,6 +244,48 @@
             "done": false,
             "text": "import Wine nodes",
             "createdOn": 1650368513572,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "import Region nodes",
+            "createdOn": 1650368588878,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "create Wine IN Region relationships",
+            "createdOn": 1650368607894,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "export project as zip file",
+            "createdOn": 1650368617794,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "export project in a github",
+            "createdOn": 1650368626627,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "create notebook with native python driver",
+            "createdOn": 1650368645260,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "create notebook with graph data science library",
+            "createdOn": 1650368657059,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
