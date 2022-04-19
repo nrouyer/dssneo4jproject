@@ -183,11 +183,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 41,
+    "versionNumber": 42,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650383255405
+    "lastModifiedOn": 1650383877028
   },
   "creationTag": {
     "versionNumber": 0,
@@ -314,7 +314,7 @@
           },
           {
             "done": false,
-            "text": "create Site IN SubRegion, SubRegion IN Region, Region IN Country relationships",
+            "text": "create Site PART_OF SubRegion, SubRegion PART_OF Region, Region PART_OF Country relationships",
             "createdOn": 1650383255317,
             "createdBy": "admin",
             "stateChangedOn": 0
