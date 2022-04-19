@@ -27,6 +27,10 @@
     {
       "objectId": "LWINdatabase_prepared_Region",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "LWINdatabase_prepared_Site",
+      "objectType": "DATASET"
     }
   ],
   "tags": [],
