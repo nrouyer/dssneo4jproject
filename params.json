@@ -183,11 +183,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 30,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650377737693
+    "lastModifiedOn": 1650378734356
   },
   "creationTag": {
     "versionNumber": 0,
@@ -288,6 +288,20 @@
             "done": false,
             "text": "create Wine IN Country relationships",
             "createdOn": 1650377731475,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "import SubRegion nodes",
+            "createdOn": 1650378718829,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "create Wine IN SubRegion relationships",
+            "createdOn": 1650378734229,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
