@@ -196,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 47,
+    "versionNumber": 48,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650385955591
+    "lastModifiedOn": 1650386189672
   },
   "creationTag": {
     "versionNumber": 0,
@@ -209,7 +209,7 @@
     },
     "lastModifiedOn": 1649851074401
   },
-  "description": "![Wine Image](https://unsplash.com/photos/aF1NPSnDQLw \"The graph of wines\")\n\n* The graph of wines",
+  "description": "![Wine Image](https://upload.wikimedia.org/wikipedia/commons/5/59/Finca_Solano_Tempranillo_Crianza.jpg \"The graph of wines\")\n\n* The graph of wines",
   "shortDesc": "The project *a graph of wines* was created by Nicolas ROUYER on Apr 13th 2022",
   "tags": [],
   "customFields": {},
