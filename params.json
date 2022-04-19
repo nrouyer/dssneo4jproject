@@ -196,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 43,
+    "versionNumber": 46,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650384225249
+    "lastModifiedOn": 1650385378960
   },
   "creationTag": {
     "versionNumber": 0,
@@ -326,9 +326,23 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "create Site PART_OF SubRegion, SubRegion PART_OF Region, Region PART_OF Country relationships",
             "createdOn": 1650383255317,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "import Producer nodes",
+            "createdOn": 1650385361295,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "create Producer PRODUCES Wine relationships",
+            "createdOn": 1650385378869,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
