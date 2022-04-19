@@ -5,6 +5,78 @@
     {
       "objectId": "LWINdatabase",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_LWINdatabase_prepared_Country",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_LWINdatabase_prepared_Region",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_LWINdatabase_prepared_Site",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_LWINdatabase_prepared_SubRegions",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dsbjV9IB",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "LWINdatabase_prepared_SubRegions",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "LWINdatabase_prepared_Site",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "LWINdatabase_prepared_Region",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "LWINdatabase_prepared_Country",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Ob7xI1cp",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Ob7xI1cp",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_ThdYLov8",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "ThdYLov8",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_xK7QUEr0",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "xK7QUEr0",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_jkmRNCHP",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "jkmRNCHP",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "dsbjV9IB",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
