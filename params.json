@@ -183,11 +183,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 30,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650369651722
+    "lastModifiedOn": 1650377737693
   },
   "creationTag": {
     "versionNumber": 0,
@@ -253,6 +253,41 @@
             "done": false,
             "text": "create notebook with graph data science library",
             "createdOn": 1650368657059,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": true,
+            "text": "import Site nodes",
+            "createdOn": 1650377640118,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "create Wine IN Site relationships",
+            "createdOn": 1650377653725,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "add description in markdown",
+            "createdOn": 1650377681742,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "import Country nodes",
+            "createdOn": 1650377707641,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "create Wine IN Country relationships",
+            "createdOn": 1650377731475,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
