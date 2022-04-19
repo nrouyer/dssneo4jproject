@@ -13,6 +13,10 @@
     {
       "objectId": "PtqZ98tr",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_PtqZ98tr",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [
