@@ -23,7 +23,20 @@
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false,
     "integrations": {
-      "integrations": []
+      "integrations": [
+        {
+          "active": true,
+          "hook": {
+            "type": "github",
+            "configuration": {
+              "useProxy": true,
+              "username": "nrouyer",
+              "accessToken": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE4de4SsGqpjF7H2fpG5SBKaXr20a8TvM0fOJ8oFs4Rx rouyer.nicolas@gmail.com",
+              "repository": "nrouyer/dssneo4jproject"
+            }
+          }
+        }
+      ]
     },
     "flowBuildSettings": {
       "mergeSparkPipelines": false,
@@ -183,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 42,
+    "versionNumber": 43,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650383877028
+    "lastModifiedOn": 1650384225249
   },
   "creationTag": {
     "versionNumber": 0,
