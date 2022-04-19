@@ -183,11 +183,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 35,
+    "versionNumber": 41,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650380821371
+    "lastModifiedOn": 1650383255405
   },
   "creationTag": {
     "versionNumber": 0,
@@ -222,7 +222,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "create Wine IN Region relationships",
             "createdOn": 1650368607894,
             "createdBy": "admin",
@@ -264,7 +264,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "create Wine IN Site relationships",
             "createdOn": 1650377653725,
             "createdBy": "admin",
@@ -278,14 +278,14 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "import Country nodes",
             "createdOn": 1650377707641,
             "createdBy": "admin",
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "create Wine IN Country relationships",
             "createdOn": 1650377731475,
             "createdBy": "admin",
@@ -299,7 +299,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "create Wine IN SubRegion relationships",
             "createdOn": 1650378734229,
             "createdBy": "admin",
@@ -309,6 +309,13 @@
             "done": false,
             "text": "add a refactoring task in a scenario",
             "createdOn": 1650380821222,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "create Site IN SubRegion, SubRegion IN Region, Region IN Country relationships",
+            "createdOn": 1650383255317,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
