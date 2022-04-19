@@ -1,0 +1,240 @@
+{
+  "type": "UploadedFiles",
+  "managed": false,
+  "formatType": "excel",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "xlsx": true,
+    "preserveNumberFormatting": false,
+    "parseDatesToISO": false,
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "sheets": "*LWINdatabase"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1650362012741
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1650362012741
+  },
+  "tags": [],
+  "params": {
+    "uploadBoxId": "e5491940d9324f569d03b47da0e0605b499efe0c68413c5b5dfa457a16430b91",
+    "uploadConnection": "Default (in DSS data dir.)",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "LWIN",
+        "type": "int"
+      },
+      {
+        "name": "STATUS",
+        "type": "string"
+      },
+      {
+        "name": "DISPLAY_NAME",
+        "type": "string"
+      },
+      {
+        "name": "PRODUCER_TITLE",
+        "type": "string"
+      },
+      {
+        "name": "PRODUCER_NAME",
+        "type": "string"
+      },
+      {
+        "name": "WINE",
+        "type": "string"
+      },
+      {
+        "name": "COUNTRY",
+        "type": "string"
+      },
+      {
+        "name": "REGION",
+        "type": "string"
+      },
+      {
+        "name": "SUB_REGION",
+        "type": "string"
+      },
+      {
+        "name": "SITE",
+        "type": "string"
+      },
+      {
+        "name": "PARCEL",
+        "type": "string"
+      },
+      {
+        "name": "COLOUR",
+        "type": "string"
+      },
+      {
+        "name": "TYPE",
+        "type": "string"
+      },
+      {
+        "name": "SUB_TYPE",
+        "type": "string"
+      },
+      {
+        "name": "DESIGNATION",
+        "type": "string"
+      },
+      {
+        "name": "CLASSIFICATION",
+        "type": "string"
+      },
+      {
+        "name": "VINTAGE_CONFIG",
+        "type": "string"
+      },
+      {
+        "name": "FIRST_VINTAGE",
+        "type": "string"
+      },
+      {
+        "name": "FINAL_VINTAGE",
+        "type": "string"
+      },
+      {
+        "name": "DATE_ADDED",
+        "type": "date"
+      },
+      {
+        "name": "DATE_UPDATED",
+        "type": "date"
+      },
+      {
+        "name": "REFERENCE",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
