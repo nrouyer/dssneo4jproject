@@ -73,6 +73,10 @@
     {
       "objectId": "compute_LWINdatabase_prepared_Region_Country",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "C9DzIJbS",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [
