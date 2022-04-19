@@ -61,6 +61,10 @@
     {
       "objectId": "cBr4uVID",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_cBr4uVID",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [
