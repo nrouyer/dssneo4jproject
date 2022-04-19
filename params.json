@@ -183,11 +183,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650380366677
+    "lastModifiedOn": 1650380584775
   },
   "creationTag": {
     "versionNumber": 0,
@@ -292,7 +292,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "import SubRegion nodes",
             "createdOn": 1650378718829,
             "createdBy": "admin",
