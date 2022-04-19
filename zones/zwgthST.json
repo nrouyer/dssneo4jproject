@@ -1,7 +1,12 @@
 {
   "name": "Relationships",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "TviWmFBo",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [
     {
       "objectId": "LWINdatabase_prepared_Country",
