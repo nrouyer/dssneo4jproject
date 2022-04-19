@@ -9,6 +9,10 @@
     {
       "objectId": "compute_TviWmFBo",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "PtqZ98tr",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [
