@@ -29,6 +29,10 @@
     {
       "objectId": "UCjefWH8",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_UCjefWH8",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [
