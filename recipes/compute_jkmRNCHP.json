@@ -3,7 +3,23 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "properties_mode": "SELECT_COLUMNS",
+      "property_names_mapping": false,
+      "property_names_map": {},
+      "expert_mode": false,
+      "batch_size": 500,
+      "load_from_csv": false,
+      "csv_size": 100000,
+      "clear_before_run": false,
+      "node_properties": [],
+      "neo4j_server_configuration": {
+        "mode": "PRESET",
+        "name": "neo4j conf"
+      },
+      "nodes_label": "SubRegion",
+      "node_id_column": "SUB_REGION"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +53,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650380499968
+    "lastModifiedOn": 1650380516808
   },
   "creationTag": {
     "versionNumber": 0,
