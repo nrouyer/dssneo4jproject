@@ -124,8 +124,10 @@
       }
     }
   },
-  "name": "trydss",
+  "name": "a graph of wines",
   "projectStatus": "Sandbox",
+  "imgPattern": 8,
+  "showInitials": false,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -180,6 +182,13 @@
       "checks": []
     }
   },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1650368513687
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
@@ -204,23 +213,37 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Set a project image (click on the color next to the project title)",
             "createdOn": 1649851074403,
             "createdBy": "admin",
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Import your [first dataset](projects/TRYDSS/datasets/new/)",
             "createdOn": 1649851074403,
             "createdBy": "admin",
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Organize your work by replacing this with a real todo",
             "createdOn": 1649851074403,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          }
+        ]
+      },
+      {
+        "id": "5cea7a",
+        "title": "Todo list 2",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "import Wine nodes",
+            "createdOn": 1650368513572,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
