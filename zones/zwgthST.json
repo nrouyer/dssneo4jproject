@@ -2,12 +2,7 @@
   "name": "Relationships",
   "color": "#465A64",
   "items": [],
-  "shared": [
-    {
-      "objectId": "LWINdatabase",
-      "objectType": "DATASET"
-    }
-  ],
+  "shared": [],
   "tags": [],
   "customFields": {},
   "checklists": {
