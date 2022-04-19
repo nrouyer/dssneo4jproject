@@ -3,7 +3,31 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "property_names_mapping": false,
+      "property_names_map": {},
+      "expert_mode": false,
+      "node_count_property": false,
+      "edge_weight_property": false,
+      "batch_size": 500,
+      "load_from_csv": false,
+      "csv_size": 100000,
+      "clear_before_run": false,
+      "skip_row_if_not_source": false,
+      "skip_row_if_not_target": false,
+      "source_node_properties": [],
+      "target_node_properties": [],
+      "relationship_properties": [],
+      "neo4j_server_configuration": {
+        "mode": "PRESET",
+        "name": "neo4j conf"
+      },
+      "source_node_label": "Wine",
+      "relationships_verb": "IN",
+      "target_node_label": "Site",
+      "source_node_id_column": "LWIN",
+      "target_node_id_column": "SITE"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +61,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650383012837
+    "lastModifiedOn": 1650383039777
   },
   "creationTag": {
     "versionNumber": 0,
