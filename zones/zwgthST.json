@@ -45,6 +45,10 @@
     {
       "objectId": "yi8q8OUv",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_yi8q8OUv",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [
