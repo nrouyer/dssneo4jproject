@@ -196,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 46,
+    "versionNumber": 47,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650385378960
+    "lastModifiedOn": 1650385955591
   },
   "creationTag": {
     "versionNumber": 0,
@@ -209,7 +209,7 @@
     },
     "lastModifiedOn": 1649851074401
   },
-  "description": "",
+  "description": "![Wine Image](https://unsplash.com/photos/aF1NPSnDQLw \"The graph of wines\")\n\n* The graph of wines",
   "shortDesc": "The project *a graph of wines* was created by Nicolas ROUYER on Apr 13th 2022",
   "tags": [],
   "customFields": {},
