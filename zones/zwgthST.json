@@ -65,6 +65,14 @@
     {
       "objectId": "compute_cBr4uVID",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "LWINdatabase_prepared_Region_Country",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_LWINdatabase_prepared_Region_Country",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [
