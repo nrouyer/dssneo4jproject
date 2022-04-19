@@ -49,6 +49,14 @@
     {
       "objectId": "compute_yi8q8OUv",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "LWINdatabase_prepared_SubRegions_Regions",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_LWINdatabase_prepared_SubRegions_Regions",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [
