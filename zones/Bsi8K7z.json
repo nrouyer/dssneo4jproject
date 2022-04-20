@@ -93,6 +93,14 @@
     {
       "objectId": "compute_LWINdatabase_prepared_Site_SubRegion",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "LWINdatabase_prepared_producer",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_LWINdatabase_prepared_producer",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
