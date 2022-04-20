@@ -101,6 +101,10 @@
     {
       "objectId": "compute_LWINdatabase_prepared_producer",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Fhx4Qgro",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
