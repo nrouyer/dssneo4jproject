@@ -105,6 +105,10 @@
     {
       "objectId": "Fhx4Qgro",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_Fhx4Qgro",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
