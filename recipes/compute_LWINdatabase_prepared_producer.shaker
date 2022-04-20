@@ -26,8 +26,32 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "PRODUCER_NAME"
+        ],
+        "values": [
+          "NA"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +59,30 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "WINE": 204,
+    "SITE": 141,
+    "DATE_UPDATED": 148,
+    "VINTAGE_CONFIG": 148,
+    "PRODUCER_NAME": 218,
+    "CLASSIFICATION": 127,
+    "SUB_TYPE": 100,
+    "DATE_ADDED": 148,
+    "DISPLAY_NAME": 300,
+    "REGION": 120,
+    "FINAL_VINTAGE": 113,
+    "STATUS": 100,
+    "SUB_REGION": 162,
+    "LWIN": 100,
+    "COUNTRY": 106,
+    "PARCEL": 100,
+    "DESIGNATION": 100,
+    "REFERENCE": 100,
+    "PRODUCER_TITLE": 120,
+    "FIRST_VINTAGE": 113,
+    "COLOUR": 100,
+    "TYPE": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
