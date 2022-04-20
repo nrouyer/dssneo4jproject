@@ -85,6 +85,10 @@
     {
       "objectId": "uNtLJewu",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_uNtLJewu",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [
