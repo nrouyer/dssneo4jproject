@@ -81,6 +81,10 @@
     {
       "objectId": "compute_C9DzIJbS",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "uNtLJewu",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [
