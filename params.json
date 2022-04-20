@@ -138,7 +138,7 @@
     }
   },
   "name": "a graph of wines",
-  "projectStatus": "Sandbox",
+  "projectStatus": "In use",
   "imgPattern": 8,
   "showInitials": false,
   "metrics": {
@@ -196,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 52,
+    "versionNumber": 55,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650386480418
+    "lastModifiedOn": 1650446973938
   },
   "creationTag": {
     "versionNumber": 0,
@@ -284,7 +284,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "add description in markdown",
             "createdOn": 1650377681742,
             "createdBy": "admin",
