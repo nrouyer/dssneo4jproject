@@ -196,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 55,
+    "versionNumber": 57,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650446973938
+    "lastModifiedOn": 1650449332573
   },
   "creationTag": {
     "versionNumber": 0,
@@ -333,14 +333,14 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "import Producer nodes",
             "createdOn": 1650385361295,
             "createdBy": "admin",
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "create Producer PRODUCES Wine relationships",
             "createdOn": 1650385378869,
             "createdBy": "admin",
