@@ -99,6 +99,10 @@
     {
       "objectId": "LWINdatabase_prepared_SubRegions",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "LWINdatabase_prepared_producer",
+      "objectType": "DATASET"
     }
   ],
   "tags": [],
