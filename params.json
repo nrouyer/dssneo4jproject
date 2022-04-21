@@ -197,11 +197,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 60,
+    "versionNumber": 61,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650549493818
+    "lastModifiedOn": 1650550619389
   },
   "creationTag": {
     "versionNumber": 0,
@@ -250,7 +250,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "export project in a github",
             "createdOn": 1650368626627,
             "createdBy": "admin",
