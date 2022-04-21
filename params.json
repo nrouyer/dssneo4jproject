@@ -25,7 +25,7 @@
     "integrations": {
       "integrations": [
         {
-          "active": true,
+          "active": false,
           "hook": {
             "type": "github",
             "configuration": {
@@ -196,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 58,
+    "versionNumber": 59,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650547887792
+    "lastModifiedOn": 1650547968924
   },
   "creationTag": {
     "versionNumber": 0,
