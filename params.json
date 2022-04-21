@@ -30,8 +30,8 @@
             "type": "github",
             "configuration": {
               "useProxy": true,
-              "username": "nrouyer",
-              "accessToken": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE4de4SsGqpjF7H2fpG5SBKaXr20a8TvM0fOJ8oFs4Rx rouyer.nicolas@gmail.com",
+              "username": "rouyer.nicolas@gmail.com",
+              "accessToken": "dss_key_neo4j",
               "repository": "nrouyer/dssneo4jproject"
             }
           }
@@ -196,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 57,
+    "versionNumber": 58,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650449332573
+    "lastModifiedOn": 1650547887792
   },
   "creationTag": {
     "versionNumber": 0,
