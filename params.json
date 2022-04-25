@@ -197,11 +197,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 61,
+    "versionNumber": 63,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650550619389
+    "lastModifiedOn": 1650918634968
   },
   "creationTag": {
     "versionNumber": 0,
@@ -257,14 +257,14 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "create notebook with native python driver",
             "createdOn": 1650368645260,
             "createdBy": "admin",
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "create notebook with graph data science library",
             "createdOn": 1650368657059,
             "createdBy": "admin",
