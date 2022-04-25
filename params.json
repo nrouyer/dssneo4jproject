@@ -197,11 +197,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 63,
+    "versionNumber": 64,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650918634968
+    "lastModifiedOn": 1650918834409
   },
   "creationTag": {
     "versionNumber": 0,
@@ -344,6 +344,13 @@
             "done": true,
             "text": "create Producer PRODUCES Wine relationships",
             "createdOn": 1650385378869,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "create sample app leveraging GraphQL API or python native driver",
+            "createdOn": 1650918834324,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
