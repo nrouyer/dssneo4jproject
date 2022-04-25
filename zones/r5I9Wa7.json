@@ -5,6 +5,14 @@
     {
       "objectId": "Person_similar_taste",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Person_similar_taste_topn",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Person_similar_taste_topn",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
