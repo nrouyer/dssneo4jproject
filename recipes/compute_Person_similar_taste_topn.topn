@@ -52,7 +52,7 @@
   "orders": [
     {
       "column": "similarityScore",
-      "desc": false
+      "desc": true
     }
   ],
   "rowNumber": false,
