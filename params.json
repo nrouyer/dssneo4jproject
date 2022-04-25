@@ -197,11 +197,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 64,
+    "versionNumber": 66,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650918834409
+    "lastModifiedOn": 1650919955640
   },
   "creationTag": {
     "versionNumber": 0,
@@ -321,7 +321,7 @@
           },
           {
             "done": false,
-            "text": "add a refactoring task in a scenario",
+            "text": "create steps in a scenario",
             "createdOn": 1650380821222,
             "createdBy": "admin",
             "stateChangedOn": 0
@@ -349,7 +349,7 @@
           },
           {
             "done": false,
-            "text": "create sample app leveraging GraphQL API or python native driver",
+            "text": "create sample app leveraging python native driver or graph data science client",
             "createdOn": 1650918834324,
             "createdBy": "admin",
             "stateChangedOn": 0
