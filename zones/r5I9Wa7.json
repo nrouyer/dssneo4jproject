@@ -1,7 +1,12 @@
 {
   "name": "Neo4j to Dataiku",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Person_similar_taste",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
