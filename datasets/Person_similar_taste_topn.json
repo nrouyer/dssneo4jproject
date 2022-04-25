@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650918498618
+    "lastModifiedOn": 1650918556646
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,20 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "person1",
+        "type": "string"
+      },
+      {
+        "name": "person2",
+        "type": "string"
+      },
+      {
+        "name": "similarityScore",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
