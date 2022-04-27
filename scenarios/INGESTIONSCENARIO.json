@@ -12,11 +12,11 @@
     "lastModifiedOn": 1650976011832
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650976011832
+    "lastModifiedOn": 1651045891701
   },
   "checklists": {
     "checklists": []
@@ -30,7 +30,34 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "runmacro_pyrunnable_neo4j_neo4j-macro",
+        "type": "runnable",
+        "name": "Step #1 create constraints",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_neo4j_neo4j-macro",
+          "config": {
+            "neo4j_server_configuration": {
+              "mode": "PRESET",
+              "name": "neo4j conf"
+            },
+            "cypherQuery": "CREATE CONSTRAINT `constraint_13301bcd` IF NOT EXISTS FOR (n:`Country`) REQUIRE (n.`COUNTRY`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_2765ce2e` IF NOT EXISTS FOR (n:`SubRegion`) REQUIRE (n.`SUB_REGION`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_5d3a0e31` IF NOT EXISTS FOR (n:`Region`) REQUIRE (n.`REGION`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_a6a38a0e` IF NOT EXISTS FOR (n:`Country`) REQUIRE (n.`LWIN`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_bd00f9d8` IF NOT EXISTS FOR (n:`Producer`) REQUIRE (n.`PRODUCER_NAME`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_e95a4fe8` IF NOT EXISTS FOR (n:`Wine`) REQUIRE (n.`LWIN`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_f9ef3df0` IF NOT EXISTS FOR (n:`Site`) REQUIRE (n.`SITE`) IS UNIQUE;"
+          },
+          "adminConfig": {},
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
