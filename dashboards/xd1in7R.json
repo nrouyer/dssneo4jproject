@@ -22,6 +22,7 @@
             "autoLoad": true,
             "showTitle": "YES",
             "title": "Project activity",
+            "borderColor": "#0045ad",
             "insightId": "PmY0xTn",
             "insightType": "project_activity",
             "displayMode": "INSIGHT",
@@ -33,7 +34,7 @@
               "top": 0,
               "left": 0,
               "width": 6,
-              "height": 4
+              "height": 7
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -43,6 +44,7 @@
             "autoLoad": true,
             "showTitle": "NO",
             "title": "Data source - LWIN database",
+            "borderColor": "#003bad",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -56,11 +58,11 @@
   "name": "trydss\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651066668970
+    "lastModifiedOn": 1651066730225
   },
   "creationTag": {
     "versionNumber": 0,
