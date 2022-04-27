@@ -10,6 +10,14 @@ from bokeh.io import curdoc
 from bokeh.layouts import column, row
 from bokeh.models import ColumnDataSource, Div, Select, Slider, TextInput
 from bokeh.plotting import figure
+from graphdatascience import GraphDataScience
+
+# Configures the driver with AuraDS-recommended settings
+gds = GraphDataScience(
+    "neo4j+ssc://35.181.44.209:7687",
+    auth=("neo4j", "neo4jdss")
+)
+
 
 # get the data from neo4j database
 conn = sql.connect(movie_path)
