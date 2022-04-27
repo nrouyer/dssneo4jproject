@@ -32,9 +32,7 @@ pd = gds.run_cypher(
   """
 )
 
-pd["color"] = np.where(pd["score"] = 1, "red")
-pd["color"] = np.where(pd["score"] < 1 and pd["score"] > 0, "orange")
-pd["color"] = np.where(pd["score"] = 0, "grey")
+pd.color[pd['score'] = 0, 'equal_or_lower_than_4?'] = 'True'
 
 axis_map = {
     "Similarity": "Similarity",
