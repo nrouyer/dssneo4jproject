@@ -5,6 +5,7 @@ sorting options based on a given dataset.
 '''
 import numpy as np
 import pandas
+import seaborn as sns
 
 from bokeh.io import curdoc
 from bokeh.layouts import column, row
