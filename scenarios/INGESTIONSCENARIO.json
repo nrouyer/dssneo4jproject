@@ -5,18 +5,18 @@
   "name": "Ingestion Scenario",
   "active": false,
   "creationTag": {
-    "versionNumber": 6,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1651046629122
-  },
-  "versionTag": {
     "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1651065845025
+  },
+  "versionTag": {
+    "versionNumber": 8,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651065959932
   },
   "checklists": {
     "checklists": []
@@ -86,7 +86,7 @@
       {
         "id": "build_0_true_f_dsbjV9IB",
         "type": "build_flowitem",
-        "name": "Step #3",
+        "name": "Step #3 Populate graph of wines database",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
