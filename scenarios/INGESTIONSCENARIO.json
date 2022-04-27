@@ -5,18 +5,18 @@
   "name": "Ingestion Scenario",
   "active": false,
   "creationTag": {
-    "versionNumber": 7,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1651065845025
-  },
-  "versionTag": {
     "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1651065959932
+  },
+  "versionTag": {
+    "versionNumber": 9,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651066193976
   },
   "checklists": {
     "checklists": []
@@ -101,6 +101,71 @@
             {
               "type": "MANAGED_FOLDER",
               "itemId": "dsbjV9IB",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "Fhx4Qgro",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "Ob7xI1cp",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "ThdYLov8",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "jkmRNCHP",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "xK7QUEr0",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "TviWmFBo",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "PtqZ98tr",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "UCjefWH8",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "CnFzrFqX",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "yi8q8OUv",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "cBr4uVID",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "C9DzIJbS",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "uNtLJewu",
               "partitionsSpec": ""
             }
           ],
