@@ -9,8 +9,8 @@
             "box": {
               "top": 0,
               "left": 6,
-              "width": 3,
-              "height": 4
+              "width": 4,
+              "height": 7
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -58,11 +58,11 @@
   "name": "trydss\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651066736850
+    "lastModifiedOn": 1651066781979
   },
   "creationTag": {
     "versionNumber": 0,
