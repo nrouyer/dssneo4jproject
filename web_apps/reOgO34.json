@@ -7,7 +7,6 @@
       "envMode": "INHERIT"
     },
     "nbProcesses": 1,
-    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -33,11 +32,11 @@
   "config": {},
   "name": "Sample wine webapp",
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651081105518
+    "lastModifiedOn": 1651081468494
   },
   "creationTag": {
     "versionNumber": 0,
