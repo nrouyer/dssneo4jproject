@@ -10,7 +10,7 @@
               "top": 0,
               "left": 6,
               "width": 4,
-              "height": 7
+              "height": 6
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -34,7 +34,7 @@
               "top": 0,
               "left": 0,
               "width": 6,
-              "height": 7
+              "height": 6
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -58,11 +58,11 @@
   "name": "trydss\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651066793490
+    "lastModifiedOn": 1651066817957
   },
   "creationTag": {
     "versionNumber": 0,
