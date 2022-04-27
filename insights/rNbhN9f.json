@@ -1,0 +1,29 @@
+{
+  "type": "scenario_last_runs",
+  "params": {
+    "scenarioSmartId": "INGESTIONSCENARIO"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Data ingestion scenario for wines",
+  "dashboardCreationId": "xd1in7R",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651067281574
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651067281574
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
