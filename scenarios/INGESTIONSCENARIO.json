@@ -5,18 +5,18 @@
   "name": "Ingestion Scenario",
   "active": false,
   "creationTag": {
-    "versionNumber": 2,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1651045895834
-  },
-  "versionTag": {
     "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1651046579499
+  },
+  "versionTag": {
+    "versionNumber": 4,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651046580583
   },
   "checklists": {
     "checklists": []
