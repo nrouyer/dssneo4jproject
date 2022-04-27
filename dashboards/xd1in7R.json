@@ -72,11 +72,11 @@
   "name": "trydss\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651066955112
+    "lastModifiedOn": 1651067105836
   },
   "creationTag": {
     "versionNumber": 0,
