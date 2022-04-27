@@ -5,18 +5,18 @@
   "name": "Ingestion Scenario",
   "active": false,
   "creationTag": {
-    "versionNumber": 3,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1651046579499
-  },
-  "versionTag": {
     "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1651046580583
+  },
+  "versionTag": {
+    "versionNumber": 5,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651046626070
   },
   "checklists": {
     "checklists": []
@@ -51,7 +51,7 @@
               "mode": "PRESET",
               "name": "neo4j conf"
             },
-            "cypherQuery": "CREATE CONSTRAINT `constraint_13301bcd` IF NOT EXISTS FOR (n:`Country`) REQUIRE (n.`COUNTRY`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_2765ce2e` IF NOT EXISTS FOR (n:`SubRegion`) REQUIRE (n.`SUB_REGION`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_5d3a0e31` IF NOT EXISTS FOR (n:`Region`) REQUIRE (n.`REGION`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_a6a38a0e` IF NOT EXISTS FOR (n:`Country`) REQUIRE (n.`LWIN`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_bd00f9d8` IF NOT EXISTS FOR (n:`Producer`) REQUIRE (n.`PRODUCER_NAME`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_e95a4fe8` IF NOT EXISTS FOR (n:`Wine`) REQUIRE (n.`LWIN`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_f9ef3df0` IF NOT EXISTS FOR (n:`Site`) REQUIRE (n.`SITE`) IS UNIQUE;"
+            "cypherQuery": "CREATE CONSTRAINT `constraint_13301bcd` IF NOT EXISTS FOR (n:`Country`) REQUIRE (n.`COUNTRY`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_2765ce2e` IF NOT EXISTS FOR (n:`SubRegion`) REQUIRE (n.`SUB_REGION`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_5d3a0e31` IF NOT EXISTS FOR (n:`Region`) REQUIRE (n.`REGION`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_a6a38a0e` IF NOT EXISTS FOR (n:`Country`) REQUIRE (n.`LWIN`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_bd00f9d8` IF NOT EXISTS FOR (n:`Producer`) REQUIRE (n.`PRODUCER_NAME`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_e95a4fe8` IF NOT EXISTS FOR (n:`Wine`) REQUIRE (n.`LWIN`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_f9ef3df0` IF NOT EXISTS FOR (n:`Site`) REQUIRE (n.`SITE`) IS UNIQUE;\nCREATE CONSTRAINT `constraint_name` IF NOT EXISTS FOR (n:`Person`) REQUIRE (n.`name`) IS UNIQUE;"
           },
           "adminConfig": {},
           "proceedOnFailure": false
