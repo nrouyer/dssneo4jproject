@@ -5,18 +5,18 @@
   "name": "Ingestion Scenario",
   "active": false,
   "creationTag": {
-    "versionNumber": 5,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1651046626070
-  },
-  "versionTag": {
     "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1651046629122
+  },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651065845025
   },
   "checklists": {
     "checklists": []
@@ -80,6 +80,32 @@
             "cypherQuery": "CREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.COLOUR);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.SUB_TYPE);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.COUNTRY);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.REGION);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.WINE);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.DESIGNATION);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.DISPLAY_NAME);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.PRODUCER_NAME);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.TYPE);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.VINTAGE_CONFIG);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.STATUS);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.CLASSIFICATION);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.SUB_REGION);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.PRODUCER_TITLE);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.REFERENCE);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.FINAL_VINTAGE);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.FIRST_VINTAGE);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.SITE);\nCREATE INDEX IF NOT EXISTS FOR (wine:Wine) ON (wine.PARCEL);"
           },
           "adminConfig": {},
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_f_dsbjV9IB",
+        "type": "build_flowitem",
+        "name": "Step #3",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "dsbjV9IB",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
       }
