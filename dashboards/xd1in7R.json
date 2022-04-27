@@ -3,7 +3,30 @@
     {
       "id": "a6ElQR7",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 3,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "CONTRIBUTION_CHARTS",
+              "summaryChart": "commits",
+              "timeSpan": "year",
+              "contributorsChart": "commits"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "PmY0xTn",
+            "insightType": "project_activity",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "showTitle": false
     }
@@ -13,11 +36,11 @@
   "name": "trydss\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649851074407
+    "lastModifiedOn": 1651066450798
   },
   "creationTag": {
     "versionNumber": 0,
