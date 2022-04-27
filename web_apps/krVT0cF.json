@@ -4,7 +4,7 @@
   "params": {
     "autoStartBackend": false,
     "envSelection": {
-      "envMode": "USE_BUILTIN_MODE"
+      "envMode": "INHERIT"
     },
     "nbProcesses": 1,
     "serveLocally": true,
@@ -33,11 +33,11 @@
   "config": {},
   "name": "The wine app",
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651081247058
+    "lastModifiedOn": 1651081273757
   },
   "creationTag": {
     "versionNumber": 0,
