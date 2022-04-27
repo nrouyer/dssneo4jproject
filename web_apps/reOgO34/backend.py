@@ -9,7 +9,7 @@ import seaborn as sns
 
 from bokeh.io import curdoc
 from bokeh.layouts import column, row
-from bokeh.models import ColumnDataSource, Div, Select, Slider, TextInput
+from bokeh.models import Slider
 from bokeh.plotting import figure
 from graphdatascience import GraphDataScience
 
