@@ -1,7 +1,17 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "INGESTIONSCENARIO",
+          "objectType": "SCENARIO"
+        },
+        "modes": [
+          "READ"
+        ]
+      }
+    ]
   },
   "exposedObjects": {
     "objects": []
@@ -197,11 +207,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 67,
+    "versionNumber": 68,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651066312913
+    "lastModifiedOn": 1651066498525
   },
   "creationTag": {
     "versionNumber": 0,
