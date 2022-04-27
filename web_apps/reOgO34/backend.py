@@ -18,6 +18,8 @@ gds = GraphDataScience(
     auth=("neo4j", "neo4jdss")
 )
 
+# Sets database (if not default one)
+gds.set_database("wine")
 
 # get the data from neo4j database
 conn = sql.connect(movie_path)
