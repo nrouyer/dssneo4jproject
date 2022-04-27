@@ -1,60 +1,118 @@
+''' An interactivate categorized chart based on a movie dataset.
+This example shows the ability of Bokeh to create a dashboard with different
+sorting options based on a given dataset.
+
+'''
+import sqlite3 as sql
+from os.path import dirname, join
+
 import numpy as np
+import pandas.io.sql as psql
 
 from bokeh.io import curdoc
-from bokeh.layouts import row, widgetbox
-from bokeh.models import ColumnDataSource
-from bokeh.models.widgets import Slider, TextInput
+from bokeh.layouts import column, row
+from bokeh.models import ColumnDataSource, Div, Select, Slider, TextInput
 from bokeh.plotting import figure
+from bokeh.sampledata.movies_data import movie_path
 
-# Set up data
-N = 200
-x = np.linspace(0, 4*np.pi, N)
-y = np.sin(x)
-source = ColumnDataSource(data=dict(x=x, y=y))
+conn = sql.connect(movie_path)
+query = open(join(dirname(__file__), 'query.sql')).read()
+movies = psql.read_sql(query, conn)
+
+movies["color"] = np.where(movies["Oscars"] > 0, "orange", "grey")
+movies["alpha"] = np.where(movies["Oscars"] > 0, 0.9, 0.25)
+movies.fillna(0, inplace=True)  # just replace missing values with zero
+movies["revenue"] = movies.BoxOffice.apply(lambda x: '{:,d}'.format(int(x)))
+
+with open(join(dirname(__file__), "razzies-clean.csv")) as f:
+    razzies = f.read().splitlines()
+movies.loc[movies.imdbID.isin(razzies), "color"] = "purple"
+movies.loc[movies.imdbID.isin(razzies), "alpha"] = 0.9
+
+axis_map = {
+    "Tomato Meter": "Meter",
+    "Numeric Rating": "numericRating",
+    "Number of Reviews": "Reviews",
+    "Box Office (dollars)": "BoxOffice",
+    "Length (minutes)": "Runtime",
+    "Year": "Year",
+}
+
+desc = Div(text=open(join(dirname(__file__), "description.html")).read(), sizing_mode="stretch_width")
+
+# Create Input controls
+reviews = Slider(title="Minimum number of reviews", value=80, start=10, end=300, step=10)
+min_year = Slider(title="Year released", start=1940, end=2014, value=1970, step=1)
+max_year = Slider(title="End Year released", start=1940, end=2014, value=2014, step=1)
+oscars = Slider(title="Minimum number of Oscar wins", start=0, end=4, value=0, step=1)
+boxoffice = Slider(title="Dollars at Box Office (millions)", start=0, end=800, value=0, step=1)
+genre = Select(title="Genre", value="All",
+               options=open(join(dirname(__file__), 'genres.txt')).read().split())
+director = TextInput(title="Director name contains")
+cast = TextInput(title="Cast names contains")
+x_axis = Select(title="X Axis", options=sorted(axis_map.keys()), value="Tomato Meter")
+y_axis = Select(title="Y Axis", options=sorted(axis_map.keys()), value="Number of Reviews")
+
+# Create Column Data Source that will be used by the plot
+source = ColumnDataSource(data=dict(x=[], y=[], color=[], title=[], year=[], revenue=[], alpha=[]))
+
+TOOLTIPS=[
+    ("Title", "@title"),
+    ("Year", "@year"),
+    ("$", "@revenue")
+]
+
+p = figure(height=600, width=700, title="", toolbar_location=None, tooltips=TOOLTIPS, sizing_mode="scale_both")
+p.circle(x="x", y="y", source=source, size=7, color="color", line_color=None, fill_alpha="alpha")
 
 
-# Set up plot
-plot = figure(plot_height=400, plot_width=400, title="my sine wave",
-              tools="crosshair,pan,reset,save,wheel_zoom",
-              x_range=[0, 4*np.pi], y_range=[-2.5, 2.5])
-
-plot.line('x', 'y', source=source, line_width=3, line_alpha=0.6)
-
-
-# Set up widgets
-text = TextInput(title="title", value='sine wave')
-offset = Slider(title="offset", value=0.0, start=-5.0, end=5.0, step=0.1)
-amplitude = Slider(title="amplitude", value=1.0, start=-5.0, end=5.0)
-phase = Slider(title="phase", value=0.0, start=0.0, end=2*np.pi)
-freq = Slider(title="frequency", value=1.0, start=0.1, end=5.1)
-
-
-# Set up callbacks
-def update_title(attrname, old, new):
-    plot.title.text = text.value
-
-text.on_change('value', update_title)
-
-def update_data(attrname, old, new):
-
-    # Get the current slider values
-    a = amplitude.value
-    b = offset.value
-    w = phase.value
-    k = freq.value
-
-    # Generate the new curve
-    x = np.linspace(0, 4*np.pi, N)
-    y = a*np.sin(k*x + w) + b
-
-    source.data = dict(x=x, y=y)
-
-for w in [offset, amplitude, phase, freq]:
-    w.on_change('value', update_data)
+def select_movies():
+    genre_val = genre.value
+    director_val = director.value.strip()
+    cast_val = cast.value.strip()
+    selected = movies[
+        (movies.Reviews >= reviews.value) &
+        (movies.BoxOffice >= (boxoffice.value * 1e6)) &
+        (movies.Year >= min_year.value) &
+        (movies.Year <= max_year.value) &
+        (movies.Oscars >= oscars.value)
+    ]
+    if (genre_val != "All"):
+        selected = selected[selected.Genre.str.contains(genre_val) is True]
+    if (director_val != ""):
+        selected = selected[selected.Director.str.contains(director_val) is True]
+    if (cast_val != ""):
+        selected = selected[selected.Cast.str.contains(cast_val) is True]
+    return selected
 
 
-# Set up layouts and add to document
-inputs = widgetbox(text, offset, amplitude, phase, freq)
+def update():
+    df = select_movies()
+    x_name = axis_map[x_axis.value]
+    y_name = axis_map[y_axis.value]
 
-curdoc().add_root(row(inputs, plot, width=800))
-curdoc().title = "Sliders"
+    p.xaxis.axis_label = x_axis.value
+    p.yaxis.axis_label = y_axis.value
+    p.title.text = "%d movies selected" % len(df)
+    source.data = dict(
+        x=df[x_name],
+        y=df[y_name],
+        color=df["color"],
+        title=df["Title"],
+        year=df["Year"],
+        revenue=df["revenue"],
+        alpha=df["alpha"],
+    )
+
+controls = [reviews, boxoffice, genre, min_year, max_year, oscars, director, cast, x_axis, y_axis]
+for control in controls:
+    control.on_change('value', lambda attr, old, new: update())
+
+inputs = column(*controls, width=320)
+
+l = column(desc, row(inputs, p), sizing_mode="scale_both")
+
+update()  # initial load of the data
+
+curdoc().add_root(l)
+curdoc().title = "Movies"
