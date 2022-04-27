@@ -7,8 +7,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
-              "left": 6,
+              "top": 7,
+              "left": 8,
               "width": 4,
               "height": 3
             },
@@ -32,8 +32,8 @@
             "tileType": "IFRAME",
             "box": {
               "top": 0,
-              "left": 0,
-              "width": 6,
+              "left": 7,
+              "width": 3,
               "height": 6
             },
             "clickAction": "DO_NOTHING",
@@ -51,15 +51,17 @@
           {
             "tileType": "IMAGE",
             "box": {
-              "top": 3,
-              "left": 6,
-              "width": 3,
-              "height": 3
+              "top": 0,
+              "left": 0,
+              "width": 7,
+              "height": 6
             },
             "clickAction": "DO_NOTHING",
             "autoLoad": true,
-            "showTitle": "MOUSEOVER",
+            "showTitle": "NO",
+            "title": "A graph of wines",
             "displayMode": "IMAGE",
+            "imageId": "s4zC54o",
             "resizeImageMode": "FIT_SIZE"
           }
         ]
@@ -72,11 +74,11 @@
   "name": "trydss\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651067105836
+    "lastModifiedOn": 1651067234780
   },
   "creationTag": {
     "versionNumber": 0,
