@@ -10,7 +10,7 @@
               "top": 0,
               "left": 6,
               "width": 4,
-              "height": 6
+              "height": 3
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -47,6 +47,20 @@
             "borderColor": "#003bad",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "IMAGE",
+            "box": {
+              "top": 3,
+              "left": 6,
+              "width": 3,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "autoLoad": true,
+            "showTitle": "MOUSEOVER",
+            "displayMode": "IMAGE",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -58,11 +72,11 @@
   "name": "trydss\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651066823838
+    "lastModifiedOn": 1651066907525
   },
   "creationTag": {
     "versionNumber": 0,
