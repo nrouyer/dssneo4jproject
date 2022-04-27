@@ -3,9 +3,6 @@ This example shows the ability of Bokeh to create a dashboard with different
 sorting options based on a given dataset.
 
 '''
-import sqlite3 as sql
-from os.path import dirname, join
-
 import numpy as np
 import pandas.io.sql as psql
 
