@@ -7,8 +7,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 7,
-              "left": 8,
+              "top": 6,
+              "left": 0,
               "width": 4,
               "height": 3
             },
@@ -33,7 +33,7 @@
             "box": {
               "top": 0,
               "left": 7,
-              "width": 3,
+              "width": 5,
               "height": 6
             },
             "clickAction": "DO_NOTHING",
@@ -63,6 +63,26 @@
             "displayMode": "IMAGE",
             "imageId": "s4zC54o",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 6,
+              "left": 4,
+              "width": 8,
+              "height": 3
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "displayMode": "SIMPLE",
+              "range": "CURRENT_MONTH"
+            },
+            "autoLoad": true,
+            "showTitle": "MOUSEOVER",
+            "insightId": "rNbhN9f",
+            "insightType": "scenario_last_runs",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -74,11 +94,11 @@
   "name": "trydss\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651067234780
+    "lastModifiedOn": 1651067312178
   },
   "creationTag": {
     "versionNumber": 0,
