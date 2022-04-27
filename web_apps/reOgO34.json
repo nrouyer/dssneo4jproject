@@ -32,11 +32,11 @@
   "config": {},
   "name": "Sample wine webapp",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651068445621
+    "lastModifiedOn": 1651068793336
   },
   "creationTag": {
     "versionNumber": 0,

@@ -1,17 +1,17 @@
-''' An interactivate categorized chart based on a movie dataset.
+''' An interactivate categorized chart based on the wine dataset.
 This example shows the ability of Bokeh to create a dashboard with different
 sorting options based on a given dataset.
 
 '''
 import numpy as np
-import pandas.io.sql as psql
+import pandas
 
 from bokeh.io import curdoc
 from bokeh.layouts import column, row
 from bokeh.models import ColumnDataSource, Div, Select, Slider, TextInput
 from bokeh.plotting import figure
-from bokeh.sampledata.movies_data import movie_path
 
+# get the data from neo4j database
 conn = sql.connect(movie_path)
 query = open(join(dirname(__file__), 'query.sql')).read()
 movies = psql.read_sql(query, conn)
@@ -27,12 +27,7 @@ movies.loc[movies.imdbID.isin(razzies), "color"] = "purple"
 movies.loc[movies.imdbID.isin(razzies), "alpha"] = 0.9
 
 axis_map = {
-    "Tomato Meter": "Meter",
-    "Numeric Rating": "numericRating",
-    "Number of Reviews": "Reviews",
-    "Box Office (dollars)": "BoxOffice",
-    "Length (minutes)": "Runtime",
-    "Year": "Year",
+    "Similarity": "Similarity",
 }
 
 desc = Div(text=open(join(dirname(__file__), "description.html")).read(), sizing_mode="stretch_width")
