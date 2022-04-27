@@ -36,6 +36,3 @@ sns.heatmap(pd.pivot('person1', 'person2', values='score'), annot=True, cmap="Yl
 # Create Slider object
 slider = Slider(start=0, end=1, value=0.5,
                 step=0.1, title='Similarity score')
-
-curdoc().add_root(l)
-curdoc().title = "Wine taste similarity matrix"
