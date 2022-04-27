@@ -32,87 +32,10 @@ pd = gds.run_cypher(
   """
 )
 
-pd.color[pd['score'] = 0, 'equal_or_lower_than_4?'] = 'True'
-
-axis_map = {
-    "Similarity": "Similarity",
-}
-
-# desc = Div(text=open(join(dirname(__file__), "description.html")).read(), sizing_mode="stretch_width")
-
-# Create Input controls
-reviews = Slider(title="Minimum number of reviews", value=80, start=10, end=300, step=10)
-min_year = Slider(title="Year released", start=1940, end=2014, value=1970, step=1)
-max_year = Slider(title="End Year released", start=1940, end=2014, value=2014, step=1)
-oscars = Slider(title="Minimum number of Oscar wins", start=0, end=4, value=0, step=1)
-boxoffice = Slider(title="Dollars at Box Office (millions)", start=0, end=800, value=0, step=1)
-genre = Select(title="Genre", value="All",
-               options=open(join(dirname(__file__), 'genres.txt')).read().split())
-director = TextInput(title="Director name contains")
-cast = TextInput(title="Cast names contains")
-x_axis = Select(title="X Axis", options=sorted(axis_map.keys()), value="Tomato Meter")
-y_axis = Select(title="Y Axis", options=sorted(axis_map.keys()), value="Number of Reviews")
-
-# Create Column Data Source that will be used by the plot
-source = ColumnDataSource(data=dict(x=[], y=[], color=[], title=[], year=[], revenue=[], alpha=[]))
-
-TOOLTIPS=[
-    ("Title", "@title"),
-    ("Year", "@year"),
-    ("$", "@revenue")
-]
-
-p = figure(height=600, width=700, title="", toolbar_location=None, tooltips=TOOLTIPS, sizing_mode="scale_both")
-p.circle(x="x", y="y", source=source, size=7, color="color", line_color=None, fill_alpha="alpha")
-
-
-def select_movies():
-    genre_val = genre.value
-    director_val = director.value.strip()
-    cast_val = cast.value.strip()
-    selected = movies[
-        (movies.Reviews >= reviews.value) &
-        (movies.BoxOffice >= (boxoffice.value * 1e6)) &
-        (movies.Year >= min_year.value) &
-        (movies.Year <= max_year.value) &
-        (movies.Oscars >= oscars.value)
-    ]
-    if (genre_val != "All"):
-        selected = selected[selected.Genre.str.contains(genre_val) is True]
-    if (director_val != ""):
-        selected = selected[selected.Director.str.contains(director_val) is True]
-    if (cast_val != ""):
-        selected = selected[selected.Cast.str.contains(cast_val) is True]
-    return selected
-
-
-def update():
-    df = select_movies()
-    x_name = axis_map[x_axis.value]
-    y_name = axis_map[y_axis.value]
-
-    p.xaxis.axis_label = x_axis.value
-    p.yaxis.axis_label = y_axis.value
-    p.title.text = "%d movies selected" % len(df)
-    source.data = dict(
-        x=df[x_name],
-        y=df[y_name],
-        color=df["color"],
-        title=df["Title"],
-        year=df["Year"],
-        revenue=df["revenue"],
-        alpha=df["alpha"],
-    )
-
-controls = [reviews, boxoffice, genre, min_year, max_year, oscars, director, cast, x_axis, y_axis]
-for control in controls:
-    control.on_change('value', lambda attr, old, new: update())
-
-inputs = column(*controls, width=320)
-
-l = column(desc, row(inputs, p), sizing_mode="scale_both")
-
-update()  # initial load of the data
+sns.heatmap(pd.pivot('person1', 'person2', values='score'), annot=True, cmap="YlGnBu")
+# Create Slider object
+slider = Slider(start=0, end=1, value=0.5,
+                step=0.1, title='Similarity score')
 
 curdoc().add_root(l)
-curdoc().title = "Movies"
+curdoc().title = "Wine taste similarity matrix"
