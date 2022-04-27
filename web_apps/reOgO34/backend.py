@@ -22,25 +22,25 @@ gds = GraphDataScience(
 gds.set_database("wine")
 
 # get the data from neo4j database
-conn = sql.connect(movie_path)
-query = open(join(dirname(__file__), 'query.sql')).read()
-movies = psql.read_sql(query, conn)
+# get similarity matrix data frame from graph
+pd = gds.run_cypher(
+  """
+  MATCH (p1:Person)
+  MATCH (p2:Person)
+  OPTIONAL MATCH (p1)-[s:SIMILAR]->(p2)
+  RETURN p1.name AS person1, p2.name AS person2, coalesce(s.score, 0) AS score
+  """
+)
 
-movies["color"] = np.where(movies["Oscars"] > 0, "orange", "grey")
-movies["alpha"] = np.where(movies["Oscars"] > 0, 0.9, 0.25)
-movies.fillna(0, inplace=True)  # just replace missing values with zero
-movies["revenue"] = movies.BoxOffice.apply(lambda x: '{:,d}'.format(int(x)))
-
-with open(join(dirname(__file__), "razzies-clean.csv")) as f:
-    razzies = f.read().splitlines()
-movies.loc[movies.imdbID.isin(razzies), "color"] = "purple"
-movies.loc[movies.imdbID.isin(razzies), "alpha"] = 0.9
+pd["color"] = np.where(pd["score"] = 1, "red")
+pd["color"] = np.where(pd["score"] < 1 and pd["score"] > 0, "orange")
+pd["color"] = np.where(pd["score"] = 0, "grey")
 
 axis_map = {
     "Similarity": "Similarity",
 }
 
-desc = Div(text=open(join(dirname(__file__), "description.html")).read(), sizing_mode="stretch_width")
+# desc = Div(text=open(join(dirname(__file__), "description.html")).read(), sizing_mode="stretch_width")
 
 # Create Input controls
 reviews = Slider(title="Minimum number of reviews", value=80, start=10, end=300, step=10)
