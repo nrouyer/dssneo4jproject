@@ -1,7 +1,12 @@
 {
   "name": "Wine Taste Similarity",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "person_taste_matrix",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
