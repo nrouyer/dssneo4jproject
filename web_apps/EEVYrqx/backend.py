@@ -9,9 +9,9 @@ df = autompg
 column = 'hp'
 
 # Uncomment the following to read your own dataset
-#dataset = dataiku.Dataset("YOUR_DATASET_NAME_HERE")
-#df = dataset.get_dataframe()
-#column = "YOUR_COLUMN_NAME"
+dataset = dataiku.Dataset("YOUR_DATASET_NAME_HERE")
+df = dataset.get_dataframe()
+column = "score"
 
 value_counts = df[column].value_counts(bins=8, sort=False)
 values = value_counts.index.map(str).values
