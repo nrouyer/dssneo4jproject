@@ -4,7 +4,7 @@ from bokeh.plotting import figure
 
 
 # Uncomment the following to read your own dataset
-dataset = dataiku.Dataset("YOUR_DATASET_NAME_HERE")
+dataset = dataiku.Dataset("person_taste_matrix")
 df = dataset.get_dataframe()
 column = "score"
 
