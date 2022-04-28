@@ -5,8 +5,8 @@ from bokeh.models.widgets import Slider, TextInput, Select
 from bokeh.plotting import figure
 import numpy as np
 import holoviews as hv
-from holoviews import streams
-hv.extension('bokeh', width=90)
+import hvplot.pandas
+hv.extension('bokeh')
 import dataiku
 import pandas as pd
 
@@ -20,4 +20,5 @@ score_column = "score"
 mydataset = dataiku.Dataset(input_dataset)
 df = mydataset.get_dataframe()
 
+df.hvplot.heatmap(x='person1', y='person2', C='score')
 

@@ -32,11 +32,11 @@
   "config": {},
   "name": "the wine app",
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651181319541
+    "lastModifiedOn": 1651181561925
   },
   "creationTag": {
     "versionNumber": 0,
