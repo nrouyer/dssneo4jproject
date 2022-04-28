@@ -1,6 +1,9 @@
 import dataiku
 from bokeh.io import curdoc
 from bokeh.plotting import figure
+import pandas
+import seaborn as sns
+from pandas import DataFrame
 
 
 # Uncomment the following to read your own dataset
@@ -8,9 +11,6 @@ dataset = dataiku.Dataset("person_taste_matrix")
 df = dataset.get_dataframe()
 column = "score"
 
-import pandas
-import seaborn as sns
-from pandas import DataFrame
 
 
 
