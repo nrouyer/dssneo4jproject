@@ -21,7 +21,7 @@ y = df[y_column]
 source = ColumnDataSource(data=dict(x=x, y=y))
 
 # Set up plot
-plot = figure(plot_height=400, plot_width=400, title=y_column+" by "+x_column,
+plot = figure(plot_height=800, plot_width=800, title=y_column+" by "+x_column,
               tools="crosshair,pan,reset,save,wheel_zoom",
               x_range=[min(x), max(x)], y_range=[min(y),max(y)])
 
