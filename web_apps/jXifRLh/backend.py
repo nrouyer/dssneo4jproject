@@ -1,9 +1,12 @@
-from bokeh.plotting import figure, show, output_file
+from bokeh.plotting import figure, output_file, show
 
-output_file('image.html')
+# output to static HTML file
+output_file("line.html")
 
-p = figure(x_range=(0,1), y_range=(0,1))
-p.image_url(url=['wine_tasting.jpg'], x=0, y=1, w=0.8, h=0.6)
-## could also leave out keywords
-# p.image_url(['tree.png'], 0, 1, 0.8, h=0.6)  
+p = figure(width=400, height=400)
+
+# add a circle renderer with a size, color, and alpha
+p.circle([1, 2, 3, 4, 5], [6, 7, 2, 4, 5], size=20, color="navy", alpha=0.5)
+
+# show the results
 show(p)
