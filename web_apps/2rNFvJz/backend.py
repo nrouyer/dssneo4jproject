@@ -22,4 +22,4 @@ df = mydataset.get_dataframe()
 
 heatmap = df.hvplot.heatmap(x='person1', y='person2', C='score')
 
-heatmap
+heatmap * hv.Labels(heatmap)
