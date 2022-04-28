@@ -32,11 +32,11 @@
   "config": {},
   "name": "app 1",
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651185301141
+    "lastModifiedOn": 1651185326186
   },
   "creationTag": {
     "versionNumber": 0,

@@ -22,7 +22,7 @@ p = figure(width=800, height=300, title="US unemployment 1948—2016",
            x_range=list(df.person1), y_range=list(df.person2),
            toolbar_location=None, tools="", x_axis_location="above")
 
-p.rect(x="Person1", y="Person2", width=1, height=1, source=source,
+p.rect(x="person1", y="person2", width=1, height=1, source=source,
        line_color=None, fill_color=transform('score', mapper))
 
 color_bar = ColorBar(color_mapper=mapper,
