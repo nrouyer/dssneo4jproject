@@ -8,6 +8,12 @@ dataset = dataiku.Dataset("person_taste_matrix")
 df = dataset.get_dataframe()
 column = "score"
 
+import pandas
+import seaborn as sns
+from pandas import DataFrame
+
+
+
 value_counts = df[column].value_counts(bins=8, sort=False)
 values = value_counts.index.map(str).values
 
