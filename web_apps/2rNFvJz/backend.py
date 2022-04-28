@@ -20,7 +20,7 @@ df = mydataset.get_dataframe()
 
 # this is the colormap from the original NYTimes plot
 colors = ["#75968f", "#a5bab7", "#c9d9d3", "#e2e2e2", "#dfccce", "#ddb7b1", "#cc7878", "#933b41", "#550b1d"]
-mapper = LinearColorMapper(palette=colors, low=df.rate.min(), high=df.rate.max())
+mapper = LinearColorMapper(palette=colors, low=df.score.min(), high=df.score.max())
 
 TOOLS = "hover,save,pan,box_zoom,reset,wheel_zoom"
 
