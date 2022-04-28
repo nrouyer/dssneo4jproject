@@ -25,7 +25,7 @@ mapper = LinearColorMapper(palette=colors, low=df.score.min(), high=df.score.max
 TOOLS = "hover,save,pan,box_zoom,reset,wheel_zoom"
 
 p = figure(title="Wine tasting similarity heatmap",
-           x_range=person1, y_range=person2,
+           x_range=x_column, y_range=y_column,
            x_axis_location="above", width=900, height=400,
            tools=TOOLS, toolbar_location='below')
 
