@@ -3,10 +3,10 @@ from bokeh.layouts import row, widgetbox
 from bokeh.models import ColumnDataSource
 from bokeh.models.widgets import Slider, TextInput, Select
 from bokeh.plotting import figure
-from bokeh.charts import HeatMap, bins, output_file, show, vplot
-from bokeh.palettes import RdYlGn6, RdYlGn9
-from bokeh.sampledata.autompg import autompg
-from bokeh.sampledata.unemployment1948 import data
+import numpy as np
+import holoviews as hv
+from holoviews import streams
+hv.extension('bokeh', width=90)
 import dataiku
 import pandas as pd
 
@@ -20,6 +20,4 @@ score_column = "score"
 mydataset = dataiku.Dataset(input_dataset)
 df = mydataset.get_dataframe()
 
-hm = HeatMap(df, x='person1', y='person2',values='score', title='Wine Tasting Similarity', stat=None)
-show(hm)
 
