@@ -3,6 +3,10 @@ from bokeh.layouts import row, widgetbox
 from bokeh.models import ColumnDataSource
 from bokeh.models.widgets import Slider, TextInput, Select
 from bokeh.plotting import figure
+from bokeh.charts import HeatMap, bins, output_file, show, vplot
+from bokeh.palettes import RdYlGn6, RdYlGn9
+from bokeh.sampledata.autompg import autompg
+from bokeh.sampledata.unemployment1948 import data
 import dataiku
 import pandas as pd
 
@@ -16,18 +20,6 @@ score_column = "score"
 mydataset = dataiku.Dataset(input_dataset)
 df = mydataset.get_dataframe()
 
-x = df[x_column]
-y = df[y_column]
-source = ColumnDataSource(data=dict(x=x, y=y))
+hm = HeatMap(df, x='person1', y='person2',values='score', title='Wine Tasting Similarity', stat=None)
+show(hm)
 
-# Set up plot
-plot = figure(plot_height=800, plot_width=800, title=y_column+" by "+x_column,
-              tools="crosshair,pan,reset,save,wheel_zoom",
-              x_range=[min(x), max(x)], y_range=[min(y),max(y)])
-
-plot.scatter('x', 'y', source=source)
-
-# Set up layouts and add to document
-inputs = widgetbox()
-
-curdoc().add_root(row(inputs, plot, width=800))
