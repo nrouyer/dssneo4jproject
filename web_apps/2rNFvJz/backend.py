@@ -20,6 +20,4 @@ score_column = "score"
 mydataset = dataiku.Dataset(input_dataset)
 df = mydataset.get_dataframe()
 
-heatmap = df.hvplot.heatmap(x='person1', y='person2', C='score')
-
-heatmap * hv.Labels(heatmap)
+df.hvplot.heatmap(x='person1', y='person2', colorbar=True)
