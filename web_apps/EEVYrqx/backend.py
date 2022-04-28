@@ -2,11 +2,6 @@ import dataiku
 from bokeh.io import curdoc
 from bokeh.plotting import figure
 
-# This loads sample dataset of cars data into a dataframe
-# Let's disply a simple histogram of horsepower (the column is called hp)
-from bokeh.sampledata.autompg import autompg
-df = autompg
-column = 'hp'
 
 # Uncomment the following to read your own dataset
 dataset = dataiku.Dataset("YOUR_DATASET_NAME_HERE")
