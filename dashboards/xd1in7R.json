@@ -86,7 +86,9 @@
           }
         ]
       },
-      "showTitle": false
+      "title": "Enjoy your graph tasting moment",
+      "showTitle": true,
+      "backgroundColor": "#8aaee3"
     }
   ],
   "owner": "admin",
@@ -94,11 +96,11 @@
   "name": "A graph of wines dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651241732271
+    "lastModifiedOn": 1651241830115
   },
   "creationTag": {
     "versionNumber": 0,
