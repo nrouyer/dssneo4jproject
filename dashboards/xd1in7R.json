@@ -91,14 +91,14 @@
   ],
   "owner": "admin",
   "listed": true,
-  "name": "trydss\u0027s default dashboard",
+  "name": "A graph of wines dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651241718585
+    "lastModifiedOn": 1651241732271
   },
   "creationTag": {
     "versionNumber": 0,
