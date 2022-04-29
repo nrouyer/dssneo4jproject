@@ -44,7 +44,7 @@ p.axis.major_label_text_font_size = "7px"
 p.axis.major_label_standoff = 0
 p.xaxis.major_label_orientation = 1.0
 
-input_dataset = ""
+input_dataset = "person_taste_matrix"
 x_column = "person1"
 y_column = "person2"
 score_column = "score"
