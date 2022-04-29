@@ -77,6 +77,10 @@ p1.axis.major_label_text_font_size = "16px"
 p1.axis.major_label_standoff = 0
 p1.xaxis.major_label_orientation = 1.0
 
+# Set up widgets
+min_score = Slider(title="Minimum score", value=df1.score.min(), start=df1.score.min(), end=df1.score.max(), step=0.05)
+max_year = Slider(title="Maximum score", value=df1.score.max(), start=df1.score.min(), end=df1.score.max(), step=0.05)
+
 #show(p)
 
 curdoc().add_root(p1)
