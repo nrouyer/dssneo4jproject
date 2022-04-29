@@ -207,11 +207,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 68,
+    "versionNumber": 69,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651066498525
+    "lastModifiedOn": 1651228155821
   },
   "creationTag": {
     "versionNumber": 0,
@@ -358,7 +358,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "create sample app leveraging python native driver or graph data science client",
             "createdOn": 1650918834324,
             "createdBy": "admin",
