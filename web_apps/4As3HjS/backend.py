@@ -80,8 +80,20 @@ p1.xaxis.major_label_orientation = 1.0
 
 # Set up widgets
 min_score = Slider(title="Minimum score", value=df1.score.min(), start=df1.score.min(), end=df1.score.max(), step=0.05)
-max_year = Slider(title="Maximum score", value=df1.score.max(), start=df1.score.min(), end=df1.score.max(), step=0.05)
+max_score = Slider(title="Maximum score", value=df1.score.max(), start=df1.score.min(), end=df1.score.max(), step=0.05)
 
-#show(p)
+#Set up update functions and callbacks
+def update_data(attrname, old, new):
+    selected = df[(score>=min_score.value) & (score<=max_score.value)]
+    # Generate the new plot
+    x = selected[person1]
+    y = selected[person2]
+    source.data = dict(x=x, y=y)
 
+for w in [min_score, max_score]:
+    w.on_change('value', update_data)    
+
+    
+inputs = widgetbox(min_score, max_score)
+    
 curdoc().add_root(p1)
