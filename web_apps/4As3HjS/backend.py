@@ -58,7 +58,7 @@ source1 = ColumnDataSource(df1)
 colors1 = ["#75968f", "#a5bab7", "#c9d9d3", "#e2e2e2", "#dfccce", "#ddb7b1", "#cc7878", "#933b41", "#550b1d"]
 mapper1 = LinearColorMapper(palette=colors, low=df1.score.min(), high=df1.score.max())
 
-p1 = figure(width=800, height=300, title="Wine tasting similarity",
+p1 = figure(width=400, height=400, title="Wine tasting similarity",
            x_range=df1['person1'].unique(), y_range=df1['person2'].unique(),
            toolbar_location=None, tools="", x_axis_location="above")
 
