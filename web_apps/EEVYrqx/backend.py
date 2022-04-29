@@ -44,6 +44,6 @@ p.axis.major_label_text_font_size = "7px"
 p.axis.major_label_standoff = 0
 p.xaxis.major_label_orientation = 1.0
 
-show(p)
+#show(p)
 
-# curdoc().add_root(p)
+curdoc().add_root(p)
