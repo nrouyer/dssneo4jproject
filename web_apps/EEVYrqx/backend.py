@@ -46,4 +46,4 @@ p.xaxis.major_label_orientation = 1.0
 
 show(p)
 
-curdoc().add_root(p)
+# curdoc().add_root(p)
