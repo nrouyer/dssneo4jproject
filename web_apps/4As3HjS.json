@@ -32,11 +32,11 @@
   "config": {},
   "name": "wine app bokeh",
   "versionTag": {
-    "versionNumber": 24,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651436979819
+    "lastModifiedOn": 1651437000813
   },
   "creationTag": {
     "versionNumber": 0,
