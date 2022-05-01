@@ -73,7 +73,7 @@ p1.rect(x="person1", y="person2", width=1, height=1, source=source1,
 
 color_bar1 = ColorBar(color_mapper=mapper1,
                      ticker=BasicTicker(desired_num_ticks=20),
-                     formatter=PrintfTickFormatter(format="%.1f"))
+                     formatter=PrintfTickFormatter(format="%.2f"))
 
 
 p1.add_layout(color_bar1, 'right')
