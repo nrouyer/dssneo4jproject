@@ -60,7 +60,7 @@ source1 = ColumnDataSource(df1)
 colors1 = ["#75968f", "#a5bab7", "#c9d9d3", "#e2e2e2", "#dfccce", "#ddb7b1", "#cc7878", "#933b41", "#550b1d"]
 mapper1 = LinearColorMapper(palette=colors, low=df1.score.min(), high=df1.score.max())
 
-p1 = figure(width=800, height=800, title="Wine tasting similarity",
+p1 = figure(width=600, height=600, title="Wine tasting similarity",
            x_range=df1['person1'].unique(), y_range=df1['person2'].unique(),
            toolbar_location=None, tools="", x_axis_location="above")
 
@@ -89,7 +89,7 @@ def update_data(attrname, old, new):
     # Generate the new plot
     x = selected[person1]
     y = selected[person2]
-    source.data = dict(x=x, y=y)
+    source1.data = dict(x=x, y=y)
 
 for w in [min_score, max_score]:
     w.on_change('value', update_data)    
@@ -98,3 +98,5 @@ for w in [min_score, max_score]:
 inputs = column(min_score, max_score)
     
 curdoc().add_root(p1)
+curdoc().add_root(min_score)
+curdoc().add_root(max_score)
