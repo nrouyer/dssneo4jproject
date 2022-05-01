@@ -94,6 +94,6 @@ for w in [min_score, max_score]:
     w.on_change('value', update_data)    
 
     
-inputs = widgetbox(min_score, max_score)
+inputs = column(min_score, max_score)
     
 curdoc().add_root(p1)
