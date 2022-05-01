@@ -85,7 +85,7 @@ max_score = Slider(title="Maximum score", value=df1.score.max(), start=df1.score
 
 #Set up update functions and callbacks
 def update_data(attrname, old, new):
-    selected = df[(score>=min_score.value) & (score<=max_score.value)]
+    selected = df1[(score>=min_score.value) & (score<=max_score.value)]
     # Generate the new plot
     x = selected[person1]
     y = selected[person2]
