@@ -67,9 +67,14 @@ p1 = figure(width=600, height=600, title="Wine tasting similarity",
 p1.rect(x="person1", y="person2", width=1, height=1, source=source1,
        line_color=None, fill_color=transform('score', mapper1))
 
+#color_bar1 = ColorBar(color_mapper=mapper1,
+#                     ticker=BasicTicker(desired_num_ticks=len(colors)),
+#                     formatter=PrintfTickFormatter(format="%d%%"))
+
 color_bar1 = ColorBar(color_mapper=mapper1,
-                     ticker=BasicTicker(desired_num_ticks=len(colors)),
+                     ticker=BasicTicker(desired_num_ticks=20),
                      formatter=PrintfTickFormatter(format="%d%%"))
+
 
 p1.add_layout(color_bar1, 'right')
 
