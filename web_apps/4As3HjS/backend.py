@@ -5,7 +5,8 @@ import pandas as pd
 from bokeh.io import output_file, show
 from bokeh.models import (BasicTicker, ColorBar, ColumnDataSource,
                           LinearColorMapper, PrintfTickFormatter)
-from bokeh.models.widgets import Slider, TextInput, Select, Column
+from bokeh.models.widgets import Slider, TextInput, Select
+from bokeh.layouts import column
 from bokeh.plotting import figure
 from bokeh.sampledata.unemployment1948 import data
 from bokeh.transform import transform
