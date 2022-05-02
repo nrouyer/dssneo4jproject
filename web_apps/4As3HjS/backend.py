@@ -96,10 +96,11 @@ def update_data(attrname, old, new):
     #x = selected.person1
     #y = selected.person2
     #source1.data = dict(x=x, y=y, score=score)
-    source1 = ColumnDataSource(selected)
+    source2 = ColumnDataSource(selected)
     #source1.data = new1.data
     #source1.data = dict(x=x, y=y)
     #source1.change.emit()
+    source1.data.update(source2.data)
     
 for w in [min_score, max_score]:
     w.on_change('value', update_data)  
