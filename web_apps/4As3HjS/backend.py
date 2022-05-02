@@ -9,7 +9,7 @@ from bokeh.plotting import figure
 from bokeh.sampledata.unemployment1948 import data
 from bokeh.transform import transform
 
-output_file("webapp_wine_tasting.html")
+#output_file("webapp_wine_tasting.html")
 
 data.Year = data.Year.astype(str)
 data = data.set_index('Year')
