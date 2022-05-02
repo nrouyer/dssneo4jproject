@@ -94,7 +94,9 @@ def update_data(attrname, old, new):
     # Generate the new plot
     x = selected[person1]
     y = selected[person2]
-    source1.data = dict(x=x, y=y, score=score)
+    #source1.data = dict(x=x, y=y, score=score)
+    source1 = ColumnDataSource(selected)
+
 
 for w in [min_score, max_score]:
     w.on_change('value', update_data)    
