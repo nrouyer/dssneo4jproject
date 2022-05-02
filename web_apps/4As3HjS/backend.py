@@ -97,11 +97,9 @@ def update_data(attrname, old, new):
     #source1.data = dict(x=x, y=y)
     source1.change.emit()
     
-min_score.js_on_change('value', update_data)
-max_score.js_on_change('value', update_data)
 
-#for w in [min_score, max_score]:
-#    w.on_change('value', update_data)    
+for w in [min_score, max_score]:
+    w.on_change('value', update_data)    
 
     
 inputs = column(min_score, max_score)
