@@ -97,10 +97,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
-              "width": 3,
-              "height": 3
+              "top": 0,
+              "left": 0,
+              "width": 10,
+              "height": 7
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -125,11 +125,11 @@
   "name": "A graph of wines dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651476917126
+    "lastModifiedOn": 1651476932854
   },
   "creationTag": {
     "versionNumber": 0,
