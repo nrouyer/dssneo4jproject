@@ -89,6 +89,15 @@
       "title": "Enjoy your graph tasting moment...",
       "showTitle": true,
       "backgroundColor": "#8aaee3"
+    },
+    {
+      "id": "p07zZIw",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Wine Webapp",
+      "showTitle": true,
+      "backgroundColor": "#dc8ae3"
     }
   ],
   "owner": "admin",
@@ -96,11 +105,11 @@
   "name": "A graph of wines dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651476864632
+    "lastModifiedOn": 1651476899341
   },
   "creationTag": {
     "versionNumber": 0,
