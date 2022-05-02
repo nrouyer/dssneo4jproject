@@ -95,10 +95,17 @@ def update_data(attrname, old, new):
     #x = selected.person1
     #y = selected.person2
     #source1.data = dict(x=x, y=y, score=score)
-    source1 = ColumnDataSource(selected)
+    source2 = ColumnDataSource(selected)
     #source1.data = new1.data
     #source1.data = dict(x=x, y=y)
-    source1.change.emit()
+    #source1.change.emit()
+    p2 = figure(width=600, height=600, title="Wine tasting similarity",
+           x_range=df1['person1'].unique(), y_range=df1['person2'].unique(),
+           toolbar_location=None, tools="", x_axis_location="above")
+
+    p2.rect(x="person1", y="person2", width=1, height=1, source=source2,
+       line_color=None, fill_color=transform('score', mapper1))
+    curdoc().add_root(row(p2, width=800))
     
 for w in [min_score, max_score]:
     w.on_change('value', update_data)  
