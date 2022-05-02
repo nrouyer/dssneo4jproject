@@ -2,7 +2,7 @@ import dataiku
 from bokeh.io import curdoc, output_file, show
 import pandas as pd
 from bokeh.models import (BasicTicker, ColorBar, ColumnDataSource,
-                          LinearColorMapper, PrintfTickFormatte, CustomJS)
+                          LinearColorMapper, PrintfTickFormatter, CustomJS)
 from bokeh.models.widgets import Slider, TextInput, Select
 from bokeh.layouts import column, row
 from bokeh.plotting import figure
