@@ -2,7 +2,7 @@ import dataiku
 from bokeh.io import curdoc, output_file, show
 import pandas as pd
 from bokeh.models import (BasicTicker, ColorBar, ColumnDataSource,
-                          LinearColorMapper, PrintfTickFormatter)
+                          LinearColorMapper, PrintfTickFormatte, CustomJS)
 from bokeh.models.widgets import Slider, TextInput, Select
 from bokeh.layouts import column, row
 from bokeh.plotting import figure
@@ -97,10 +97,11 @@ def update_data(attrname, old, new):
     #source1.data = dict(x=x, y=y)
     source1.change.emit()
     
+min_score.js_on_change('value', update_data)
+max_score.js_on_change('value', update_data)
 
-
-for w in [min_score, max_score]:
-    w.on_change('value', update_data)    
+#for w in [min_score, max_score]:
+#    w.on_change('value', update_data)    
 
     
 inputs = column(min_score, max_score)
