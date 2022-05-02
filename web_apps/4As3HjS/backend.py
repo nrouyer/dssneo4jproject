@@ -52,6 +52,7 @@ score_column = "score"
 # Set up data
 mydataset = dataiku.Dataset(input_dataset)
 df1 = mydataset.get_dataframe()
+global source1
 source1 = ColumnDataSource(df1)
 
 # this is the colormap from the original NYTimes plot
@@ -99,7 +100,6 @@ def update_data(attrname, old, new):
     #source1.data = new1.data
     #source1.data = dict(x=x, y=y)
     #source1.change.emit()
-    return p1
     
 for w in [min_score, max_score]:
     w.on_change('value', update_data)  
