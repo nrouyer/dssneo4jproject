@@ -87,10 +87,6 @@ p1.xaxis.major_label_orientation = 1.0
 min_score = Slider(title="Minimum score", value=df1.score.min(), start=df1.score.min(), end=df1.score.max(), step=0.05)
 max_score = Slider(title="Maximum score", value=df1.score.max(), start=df1.score.min(), end=df1.score.max(), step=0.05)
 
-min_score.js_on_change("value", CustomJS(code="""
-    console.log('min_score: value=' + this.value, this.toString())
-"""))
-
 
 #Set up update functions and callbacks
 def update_data(attrname, old, new):
@@ -107,6 +103,7 @@ def update_data(attrname, old, new):
 
 for w in [min_score, max_score]:
     w.on_change('value', update_data)    
+    curdoc().add_root(row(inputs, p1, width=800))
 
     
 inputs = column(min_score, max_score)
