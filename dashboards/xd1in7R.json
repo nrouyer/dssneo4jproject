@@ -96,11 +96,11 @@
   "name": "A graph of wines dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651241854840
+    "lastModifiedOn": 1651476864632
   },
   "creationTag": {
     "versionNumber": 0,
