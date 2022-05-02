@@ -92,6 +92,7 @@ def update_data(attrname, old, new):
     # Generate the new plot
     x = selected.person1
     y = selected.person2
+    printf("attribute" + attrname + " has new value: " + new)
     #source1.data = dict(x=x, y=y, score=score)
     source1 = ColumnDataSource(selected)
     #source1.data = dict(x=x, y=y)
