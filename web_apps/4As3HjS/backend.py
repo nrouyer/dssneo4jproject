@@ -100,7 +100,8 @@ def update_data(attrname, old, new):
     #source1.data = dict(x=x, y=y)
     source1.change.emit()
     
-
+for w in [min_score, max_score]:
+    w.on_change('value', update_data)  
     
 inputs = column(min_score, max_score)
     
@@ -110,5 +111,4 @@ inputs = column(min_score, max_score)
 # curdoc().add_periodic_callback(update_data, 20)
 curdoc().add_root(row(inputs, p1, width=800))
 
-for w in [min_score, max_score]:
-    w.on_change('value', update_data)    
+  
