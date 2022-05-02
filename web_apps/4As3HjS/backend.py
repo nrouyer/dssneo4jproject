@@ -90,11 +90,12 @@ max_score = Slider(title="Maximum score", value=df1.score.max(), start=df1.score
 def update_data(attrname, old, new):
     selected = df1[(score>=min_score.value) & (score<=max_score.value)]
     # Generate the new plot
-    x = selected[person1]
-    y = selected[person2]
+    #x = selected[person1]
+    #y = selected[person2]
     #source1.data = dict(x=x, y=y, score=score)
     source1 = ColumnDataSource(selected)
-
+    p1.rect(x="person1", y="person2", width=1, height=1, source=source1,
+       line_color=None, fill_color=transform('score', mapper1))
 
 for w in [min_score, max_score]:
     w.on_change('value', update_data)    
