@@ -1,5 +1,5 @@
 import dataiku
-from bokeh.io import curdoc, output_file, show
+#from bokeh.io import curdoc, output_file, show
 import pandas as pd
 
 from bokeh.io import output_file, show
