@@ -94,8 +94,8 @@ def update_data(attrname, old, new):
     #x = selected.person1
     #y = selected.person2
     #source1.data = dict(x=x, y=y, score=score)
-    new1 = ColumnDataSource(selected)
-    source1.data = new1.data
+    source1 = ColumnDataSource(selected)
+    #source1.data = new1.data
     #source1.data = dict(x=x, y=y)
     source1.change.emit()
     
