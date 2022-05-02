@@ -1,0 +1,30 @@
+{
+  "type": "web_app",
+  "params": {
+    "webAppSmartId": "4As3HjS",
+    "webAppType": "BOKEH"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "wine app bokeh",
+  "dashboardCreationId": "xd1in7R",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651476916645
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1651476916645
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

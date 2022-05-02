@@ -93,7 +93,27 @@
     {
       "id": "p07zZIw",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 3,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "loadTimeoutInSeconds": 0
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "insightId": "ioEiXDd",
+            "insightType": "web_app",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "title": "Wine Webapp",
       "showTitle": true,
@@ -105,11 +125,11 @@
   "name": "A graph of wines dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651476899341
+    "lastModifiedOn": 1651476916647
   },
   "creationTag": {
     "versionNumber": 0,
