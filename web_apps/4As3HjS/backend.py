@@ -82,6 +82,7 @@ p1.axis.major_label_text_font_size = "16px"
 p1.axis.major_label_standoff = 0
 p1.xaxis.major_label_orientation = 1.0
 
+
 # Set up widgets
 min_score = Slider(title="Minimum score", value=df1.score.min(), start=df1.score.min(), end=df1.score.max(), step=0.05)
 max_score = Slider(title="Maximum score", value=df1.score.max(), start=df1.score.min(), end=df1.score.max(), step=0.05)
@@ -90,11 +91,11 @@ max_score = Slider(title="Maximum score", value=df1.score.max(), start=df1.score
 def update_data(attrname, old, new):
     selected = df1[(df1.score>=min_score.value) & (df1.score<=max_score.value)]
     # Generate the new plot
-    x = selected.person1
-    y = selected.person2
-    printf("attribute" + attrname + " has new value: " + new)
+    #x = selected.person1
+    #y = selected.person2
     #source1.data = dict(x=x, y=y, score=score)
-    source1 = ColumnDataSource(selected)
+    new1 = ColumnDataSource(selected)
+    source1.data = new1.data
     #source1.data = dict(x=x, y=y)
     source1.change.emit()
     
