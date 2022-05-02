@@ -109,5 +109,6 @@ inputs = column(min_score, max_score)
 #curdoc().add_root(p1)
 #curdoc().add_root(min_score)
 #curdoc().add_root(max_score)
+curdoc().add_periodic_callback(update_data, 20)
 curdoc().add_root(row(inputs, p1, width=800))
 
